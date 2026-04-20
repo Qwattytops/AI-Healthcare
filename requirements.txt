@@ -6,3 +6,4 @@ langchain-groq
 langchain-core
 langgraph
 duckduckgo-search
+protobuf==3.20.3
