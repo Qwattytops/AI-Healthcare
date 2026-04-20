@@ -331,7 +331,7 @@ def skip_retrieval_node(state: CapstoneState) -> dict:
 def tool_node(state: CapstoneState) -> dict:
     """Web search tool — always returns a string, never raises exceptions."""
     try:
-        from ddgs import DDGS
+        from duckduckgo_search import DDGS
         with DDGS() as ddgs:
             raw = list(ddgs.text(
                 state["question"] + " first aid health advisory",
